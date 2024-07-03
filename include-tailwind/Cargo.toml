@@ -1,0 +1,20 @@
+[package]
+name = "include-tailwind"
+description = "simple inclusion of tailwind in rust projects"
+categories = ["css", "tailwind"]
+
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[features]
+default = []
+axum = ["dep:axum-core", "dep:http"]
+maud = ["dep:maud"]
+
+[dependencies]
+axum-core = { version = "0.4", optional = true }
+http = { version = "1", optional = true }
+maud = { version = "0.26", optional = true }
+
+

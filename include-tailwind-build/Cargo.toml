@@ -1,0 +1,13 @@
+[package]
+name = "include-tailwind-build"
+description = "build script for include-tailwind"
+categories = ["css", "tailwind", "build"]
+
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+serde_json = "1"
+thiserror = "1"
+

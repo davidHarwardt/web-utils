@@ -1,0 +1,8 @@
+[package]
+name = "npm-build"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+
