@@ -1,7 +1,8 @@
 [package]
 name = "include-tailwind"
 description = "simple inclusion of tailwind in rust projects"
-categories = ["css", "tailwind"]
+keywords = ["css", "tailwind"]
+categories = ["web-programming"]
 
 version.workspace = true
 edition.workspace = true

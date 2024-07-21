@@ -1,7 +1,8 @@
 [package]
 name = "include-tailwind-build"
 description = "build script for include-tailwind"
-categories = ["css", "tailwind", "build"]
+keywords = ["css", "tailwind", "build"]
+categories = ["web-programming"]
 
 version.workspace = true
 edition.workspace = true
