@@ -1,6 +1,6 @@
 
 [workspace]
-members = ["include-tailwind-build", "include-tailwind", "web-test", "npm-build"]
+members = ["include-tailwind-build", "include-tailwind", "web-test", "npm-build", "use-tailwind"]
 resolver = "2"
 
 [workspace.package]
