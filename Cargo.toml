@@ -1,10 +1,12 @@
 
 [workspace]
-members = ["include-tailwind-build", "include-tailwind", "web-test", "npm-build", "use-tailwind"]
+members = ["include-tailwind-build", "include-tailwind", "web-test"]
 resolver = "2"
 
 [workspace.package]
 version = "0.1.0"
 edition = "2021"
 authors = ["david"]
+repository = "https://github.com/davidHarwardt/web-utils"
+license = "MIT"
 

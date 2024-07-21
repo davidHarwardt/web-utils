@@ -6,6 +6,8 @@ categories = ["css", "tailwind"]
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
+repository.workspace = true
+license.workspace = true
 
 [features]
 default = []
