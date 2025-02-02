@@ -313,7 +313,7 @@ version = "0.2.0"
 dependencies = [
  "axum-core 0.5.0",
  "http",
- "maud",
+ "maud 0.26.0 (git+https://github.com/lambda-fairy/maud?rev=09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3)",
 ]
 
 [[package]]
@@ -367,7 +367,16 @@ dependencies = [
  "axum-core 0.4.5",
  "http",
  "itoa",
- "maud_macros",
+ "maud_macros 0.26.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "maud"
+version = "0.26.0"
+source = "git+https://github.com/lambda-fairy/maud?rev=09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3#09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3"
+dependencies = [
+ "itoa",
+ "maud_macros 0.26.0 (git+https://github.com/lambda-fairy/maud?rev=09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3)",
 ]
 
 [[package]]
@@ -378,6 +387,17 @@ checksum = "fa453238ec218da0af6b11fc5978d3b5c3a45ed97b722391a2a11f3306274e18"
 dependencies = [
  "proc-macro-error",
  "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "maud_macros"
+version = "0.26.0"
+source = "git+https://github.com/lambda-fairy/maud?rev=09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3#09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3"
+dependencies = [
+ "proc-macro2",
+ "proc-macro2-diagnostics",
  "quote",
  "syn",
 ]
@@ -530,6 +550,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5e719e8df665df0d1c8fbfd238015744736151d4445ec0836b8e628aae103b77"
 dependencies = [
  "unicode-ident",
+]
+
+[[package]]
+name = "proc-macro2-diagnostics"
+version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "af066a9c399a26e020ada66a034357a868728e72cd426f3adcd35f80d88d88c8"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+ "version_check",
 ]
 
 [[package]]
@@ -823,7 +855,7 @@ dependencies = [
  "axum",
  "include-tailwind",
  "include-tailwind-build",
- "maud",
+ "maud 0.26.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio",
  "tower-livereload",
 ]

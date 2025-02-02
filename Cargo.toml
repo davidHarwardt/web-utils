@@ -4,7 +4,7 @@ members = ["include-tailwind-build", "include-tailwind", "web-test"]
 resolver = "2"
 
 [workspace.package]
-version = "0.2.0"
+version = "0.3.0"
 edition = "2021"
 authors = ["david"]
 repository = "https://github.com/davidHarwardt/web-utils"
