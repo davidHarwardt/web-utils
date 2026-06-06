@@ -126,8 +126,6 @@ impl BuildConfig {
             panic!("could not build styles");
         }
 
-        println!("cargo:rustc-env=INCLUDE_TAILWIND_PATH={}", tw_out_path.to_str().unwrap());
-
         Ok(())
     }
 
