@@ -309,16 +309,16 @@ dependencies = [
 
 [[package]]
 name = "include-tailwind"
-version = "0.2.0"
+version = "0.4.0"
 dependencies = [
  "axum-core 0.5.0",
  "http",
- "maud 0.26.0 (git+https://github.com/lambda-fairy/maud?rev=09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3)",
+ "maud 0.27.0",
 ]
 
 [[package]]
 name = "include-tailwind-build"
-version = "0.2.0"
+version = "0.4.0"
 dependencies = [
  "serde_json",
  "thiserror",
@@ -367,16 +367,17 @@ dependencies = [
  "axum-core 0.4.5",
  "http",
  "itoa",
- "maud_macros 0.26.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "maud_macros 0.26.0",
 ]
 
 [[package]]
 name = "maud"
-version = "0.26.0"
-source = "git+https://github.com/lambda-fairy/maud?rev=09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3#09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3"
+version = "0.27.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8156733e27020ea5c684db5beac5d1d611e1272ab17901a49466294b84fc217e"
 dependencies = [
  "itoa",
- "maud_macros 0.26.0 (git+https://github.com/lambda-fairy/maud?rev=09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3)",
+ "maud_macros 0.27.0",
 ]
 
 [[package]]
@@ -393,8 +394,9 @@ dependencies = [
 
 [[package]]
 name = "maud_macros"
-version = "0.26.0"
-source = "git+https://github.com/lambda-fairy/maud?rev=09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3#09b97ad8df9afbbf8a21f8eb3045d3dbe8faaba3"
+version = "0.27.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7261b00f3952f617899bc012e3dbd56e4f0110a038175929fa5d18e5a19913ca"
 dependencies = [
  "proc-macro2",
  "proc-macro2-diagnostics",
@@ -849,13 +851,13 @@ checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
 
 [[package]]
 name = "web-test"
-version = "0.2.0"
+version = "0.4.0"
 dependencies = [
  "anyhow",
  "axum",
  "include-tailwind",
  "include-tailwind-build",
- "maud 0.26.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "maud 0.26.0",
  "tokio",
  "tower-livereload",
 ]

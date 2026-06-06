@@ -130,9 +130,9 @@ impl std::fmt::Display for LoadTailwind {
             LoadTailwind::Jit { config, jit_url } => {
                 write!(f, "
 <script src=\"{jit_url}\"></script>
-<script>
-{config}
-</script>")?;
+<style type='text/tailwindcss'>
+    {config}
+</style>\n")?;
             },
         }
         Ok(())
