@@ -14,7 +14,6 @@ pub struct BuildConfig {
     css_path: Option<PathBuf>,
     always: bool,
     cdn_src: String,
-    tailwind_version: String,
 }
 
 // https://github.com/tailwindlabs/tailwindcss/releases/download/v4.3.0/tailwindcss-linux-arm64
