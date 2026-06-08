@@ -209,7 +209,7 @@ dependencies = [
 
 [[package]]
 name = "include-tailwind"
-version = "0.4.3"
+version = "0.4.5"
 dependencies = [
  "axum-core",
  "http",
@@ -218,7 +218,7 @@ dependencies = [
 
 [[package]]
 name = "include-tailwind-build"
-version = "0.4.3"
+version = "0.4.5"
 dependencies = [
  "serde_json",
  "thiserror",
@@ -673,7 +673,7 @@ checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
 
 [[package]]
 name = "web-test"
-version = "0.4.3"
+version = "0.4.5"
 dependencies = [
  "anyhow",
  "axum",

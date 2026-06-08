@@ -138,7 +138,7 @@ impl BuildConfig {
         let tw_in_path = out_dir.join("style.in.css");
         let tw_out_path = out_dir.join("style.css");
 
-        if !Command::new("npx").arg("@tailwind/cli")
+        if !Command::new("npx").arg("@tailwindcss/cli")
             .arg("-i").arg(&tw_in_path)
             .arg("-o").arg(&tw_out_path)
             .args(["--minify"])
@@ -147,6 +147,8 @@ impl BuildConfig {
         .success() {
             panic!("could not build styles");
         }
+
+        println!("cargo:rustc-env=INCLUDE_TAILWIND_PATH={}", tw_out_path.to_string_lossy());
 
         Ok(())
     }
