@@ -80,9 +80,9 @@ checksum = "1e748733b7cbc798e1434b6ac524f0c1ff2ab456fe201501e6497c8417a4fc33"
 
 [[package]]
 name = "cfg-if"
-version = "1.0.0"
+version = "1.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
+checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
 
 [[package]]
 name = "form_urlencoded"
@@ -209,7 +209,7 @@ dependencies = [
 
 [[package]]
 name = "include-tailwind"
-version = "0.4.1"
+version = "0.4.3"
 dependencies = [
  "axum-core",
  "http",
@@ -218,7 +218,7 @@ dependencies = [
 
 [[package]]
 name = "include-tailwind-build"
-version = "0.4.1"
+version = "0.4.3"
 dependencies = [
  "serde_json",
  "thiserror",
@@ -673,7 +673,7 @@ checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
 
 [[package]]
 name = "web-test"
-version = "0.4.1"
+version = "0.4.3"
 dependencies = [
  "anyhow",
  "axum",
