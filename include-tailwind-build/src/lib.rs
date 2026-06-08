@@ -116,7 +116,9 @@ impl BuildConfig {
         let tw_out_path = out_dir.join("style.css");
 
         if !Command::new("npx")
-            .args([&self.tailwind_version])
+            .arg("--package=tailwindcss")
+            .arg(format!("--package={}", self.tailwind_version))
+            .arg("tailwindcss")
             .arg("-i").arg(&tw_in_path)
             .arg("-o").arg(&tw_out_path)
             .args(["--minify"])
