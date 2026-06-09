@@ -16,6 +16,12 @@ pub struct BuildConfig {
     cdn_src: String,
 }
 
+#[cfg(not(windows))] const NPM_CMD: &'static str = "npm";
+#[cfg(windows)] const NPM_CMD: &'static str = "npm.cmd";
+
+#[cfg(not(windows))] const NPX_CMD: &'static str = "npx";
+#[cfg(windows)] const NPX_CMD: &'static str = "npx.cmd";
+
 // https://github.com/tailwindlabs/tailwindcss/releases/download/v4.3.0/tailwindcss-linux-arm64
 
 impl BuildConfig {
@@ -127,7 +133,7 @@ impl BuildConfig {
 
         if !node_modules_path.exists() {
             println!("installing tailwind");
-            if !Command::new("npm").args(["install"])
+            if !Command::new(NPM_CMD).args(["install"])
                 .current_dir(out_dir)
                 .status()
             .unwrap().success() { panic!("could not install tailwind") }
@@ -138,7 +144,7 @@ impl BuildConfig {
         let tw_in_path = out_dir.join("style.in.css");
         let tw_out_path = out_dir.join("style.css");
 
-        if !Command::new("npx").arg("@tailwindcss/cli")
+        if !Command::new(NPX_CMD).arg("@tailwindcss/cli")
             .arg("-i").arg(&tw_in_path)
             .arg("-o").arg(&tw_out_path)
             .args(["--minify"])
